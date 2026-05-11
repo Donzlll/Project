@@ -1,10 +1,6 @@
 import sqlite3
-
 conn = sqlite3.connect('database.db')
 c = conn.cursor()
-
-c.execute("DROP TABLE IF EXISTS users")
-conn.commit()
 
 #create a table
 c.execute('''
@@ -16,20 +12,18 @@ c.execute('''
         Year INTEGER NOT NULL
     )
 ''')
-conn.commit() #must commit to save changes
+conn.commit()
 
-# ✅ FIXED: Proper INSERT with correct column order
 Demodata = [
-    ('Michael Reyes', 251018, 19, 'BSIT', 1),
-    ('Ana Santos', 251019, 20, 'BSCS', 2),
-    ('Juan Cruz', 251020, 18, 'BSIT', 1)
+    ('Michael Reyes', 19, 'BSIT', 1),     # Name, Age, Course, Year
+    ('Ana Santos', 20, 'BSCS', 2),
+    ('Juan Cruz', 18, 'BSIT', 1),
+    ('Maria Lopez', 21, 'BSCE', 3)
 ]
 
-
 c.executemany("""
-    INSERT INTO users (Name, Student_ID, Age, Course, Year) 
-    VALUES (, , , , )
+    INSERT INTO users (Name, Age, Course, Year) 
+    VALUES (?, ?, ?, ?)
 """, Demodata)
 conn.commit()
 conn.close()
-
