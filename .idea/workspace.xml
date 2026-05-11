@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a4a9d1-c58c-43d6-b80c-422ede725aaf" name="Changes" comment="Database">
+    <list default="true" id="d9a4a9d1-c58c-43d6-b80c-422ede725aaf" name="Changes" comment="New DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +172,39 @@
       <option name="project" value="LOCAL" />
       <updated>1778521069252</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Database">
+      <option name="closed" value="true" />
+      <created>1778530747627</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1778530747627</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Database">
+      <option name="closed" value="true" />
+      <created>1778530802382</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1778530802382</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Database">
+      <option name="closed" value="true" />
+      <created>1778530833573</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1778530833573</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New DB">
+      <option name="closed" value="true" />
+      <created>1778531030485</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1778531030485</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,6 +214,7 @@
     <MESSAGE value="Starting" />
     <MESSAGE value="Demo Account 1" />
     <MESSAGE value="Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database" />
+    <MESSAGE value="New DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="New DB" />
   </component>
 </project>

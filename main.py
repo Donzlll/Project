@@ -28,7 +28,7 @@ Demodata = [
 
 c.executemany("""
     INSERT INTO users (Name, Student_ID, Age, Course, Year) 
-    VALUES (?, ?, ?, ?, ?)
+    VALUES (, , , , )
 """, Demodata)
 conn.commit()
 conn.close()
