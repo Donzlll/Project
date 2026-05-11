@@ -31,6 +31,5 @@ c.executemany("""
     VALUES (?, ?, ?, ?, ?)
 """, Demodata)
 conn.commit()
-
 conn.close()
 
