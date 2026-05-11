@@ -1,24 +1,13 @@
-def main() -> None:
-	import os
-	import sys
+Data manager 
+- collecting data
+- updating and maintaining record
+- checking data accuracy
+- managing database 
 
-	# If this file is executed as a script (e.g., `python src/main.py`), Python adds
-	# `src/` (not the project root) to sys.path, so `import src...` fails.
-	if __package__ in (None, ""):
-		project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-		if project_root not in sys.path:
-			sys.path.insert(0, project_root)
+Database = Collection of data 
+GitHub = cloud of repo
+Repo = Copy
 
-	from src.frontend.login.login import open_login_window
-	from ttkbootstrap import Window
-
-	window = Window(themename="darkly")
-	window.withdraw()
-
-	open_login_window(window)
-
-	window.mainloop()
-
-
-if __name__ == "__main__":
-	main()
+To Do List:
+1. Make a demo account 
+2. 
