@@ -12,4 +12,4 @@ Repo = Copy
 
 To Do List:
 1. Make a demo account 
-2. 
+2. Account Password/demo email
