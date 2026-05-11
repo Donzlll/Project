@@ -1,6 +1,6 @@
 **Demo Account**
 
-- Name: John Michael Reyes
+- Name: Michael Reyes
 - Student ID: 25-1018
 - Course: BS Information Technology
 - Year & Section: BSIT 1-1
@@ -9,10 +9,10 @@
 - Birthdate: March 15, 2007
 - Address: Valenzuela City, Philippines
 - Contact Number: 0912-345-6789
-- Email: johnreyes@studentdemo.com
+- Email: mreyes@studentdemo.com
 
 **Account Credentials**
-- Username: jmreyes01
+- Username: mreyes01
 - Password: Demo@123
 **School Information**
 - School: Pamantasan ng Valenzuela
