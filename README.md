@@ -5,7 +5,9 @@ Data manager
 - managing database 
 
 Database = Collection of data 
+
 GitHub = cloud of repo
+
 Repo = Copy
 
 To Do List:
