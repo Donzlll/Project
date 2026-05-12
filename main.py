@@ -1,32 +1,39 @@
-import sqlite3
-conn = sqlite3.connect('database.db') #Creates/opens database file
-c = conn.cursor()
+import sqlite3  # LINE 1 - Import SQLite
 
-c.execute("DROP TABLE IF EXISTS users") # Delete the existing data
+# CONNECT & CREATE CURSOR
+conn = sqlite3.connect('database.db')  # LINE 4 ✅ Creates/opens file
+c = conn.cursor()                     # LINE 6 ✅ SQL executor
 
-#create a table
-c.execute('''
-    CREATE TABLE IF NOT EXISTS users (
-        Student_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-        Student_Name TEXT NOT NULL,
-        Student_Age INTEGER NOT NULL,
-        Course TEXT NOT NULL,
-        Year_Level INTEGER NOT NULL
+# DELETE OLD TABLE
+c.execute("DROP TABLE IF EXISTS users")  # LINE 9 ✅ Safe delete
+
+# CREATE TABLE
+c.execute('''                                       
+    CREATE TABLE IF NOT EXISTS users (               
+        Student_ID INTEGER PRIMARY KEY AUTOINCREMENT, 
+        Student_Name TEXT NOT NULL,                  
+        Course TEXT NOT NULL,                         
+        Email TEXT,                                   
+        Password TEXT,                                
+        UNIQUE (Email, Password)                     
     )
-''')
-conn.commit() #must commit to save changes
-#multiple data
-testdata = [
-    ('Michael Reyes', 19, 'BSIT', 1),     # Name, Age, Course, Year
-    ('Ana Santos', 20, 'BSCS', 2),
-    ('Juan Cruz', 18, 'BSIT', 1),
-    ('Maria Lopez', 21, 'BSCE', 3)
+''')                                                  # LINE 21
+conn.commit()  # LINE 23 ✅ SAVE TABLE TO DISK!
+
+# TEST DATA - FIXED (5 columns to match table)
+testdata = [                                        # LINE 26
+    ('Mojica Brandon Leonand D.R.', 'BSIT', 'gg@email.com', 'gg198'),     # LINE 27
+    ('Ana Santos', 'BSCS', 'ee@email.com', '1223hh')                      # LINE 28
 ]
 
-c.executemany("""
-    INSERT INTO users (Student_Name, Student_Age, Course, Year_Level) 
-    VALUES (?, ?, ?, ?)
-""", testdata)
+# INSERT MULTIPLE - FIXED SYNTAX
+c.executemany("""                                   
+    INSERT INTO users (Student_Name, Course, Email, Password) 
+    VALUES (?, ?, ?, ?)                               
+""", testdata)                                        # LINE 36
 
-conn.commit()
-conn.close()
+conn.commit()  # LINE 38 ✅ SAVE DATA!
+conn.close()   # LINE 40 ✅ CLEANUP!
+
+
+
